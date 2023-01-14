@@ -20,6 +20,7 @@
  * Define Global Variables
  *
  */
+let startingTime = performance.now();
 // Getting All Section Elements Dynamically
 const sectionGroup = Array.from(document.querySelectorAll("section"));
 // Getting ul to nest our group of li's inside of it
@@ -44,14 +45,29 @@ function creatingListItems() {
   }
 }
 creatingListItems();
+let topPosition;
+navbar = document.getElementsByClassName("page__header");
+window.addEventListener("scroll", function () {
+  let topScroll = window.pageYOffset || document.documentElement.topScroll;
+  if (topScroll > topPosition) {
+    navbar[0].style.top = "-82px";
+  } else {
+    navbar[0].style.top = "0";
+  }
+  topPosition = topScroll;
+});
+let scrollToTop = document.querySelector(".scrolltotop");
+scrollToTop.addEventListener("click", function () {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+});
 /**
  * End Helper Functions
  * Begin Main Functions
  *
  */
 // Activating The Viewport Section
-window.onscroll = function () {
-  document.querySelectorAll("section").forEach(function (element) {
+window.onscroll = () => {
+  document.querySelectorAll("section").forEach((element) => {
     if (
       element.getBoundingClientRect().top >= -400 &&
       element.getBoundingClientRect().top <= 150
@@ -64,7 +80,7 @@ window.onscroll = function () {
 };
 // Getting Anchors In Our DOM And Add Event Listener On Them
 const links = document.querySelectorAll(".menu__link");
-links.forEach(function (ele) {
+links.forEach((ele) => {
   ele.addEventListener("click", smoothScroll);
 });
 // This Is The Main Function To Make The Scrolling Smooth When Clicking On One Of The Anchors
@@ -77,6 +93,9 @@ function smoothScroll(e) {
     behavior: "smooth",
   });
 }
+let endingTime = performance.now();
+// Testing The Performanc In The Console Window Which Depicts The Time Code Has Taken To Run In Milliseconds
+console.log(`${endingTime - startingTime} milliseconds`);
 // build the nav
 // Add class 'active' to section when near top of viewport
 // Scroll to anchor ID using scrollTO event
