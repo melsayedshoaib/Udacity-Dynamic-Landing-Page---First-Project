@@ -29,6 +29,7 @@ const itemsGroup = document.getElementById("navbar__list");
  * Start Helper Functions
  *
  */
+// Creating Navbar Link Items Dynamically
 function creatingListItems() {
   for (let section of sectionGroup) {
     let sectionName = section.getAttribute("data-nav");
@@ -48,6 +49,7 @@ creatingListItems();
  * Begin Main Functions
  *
  */
+// Activating The Viewport Section
 window.onscroll = function () {
   document.querySelectorAll("section").forEach(function (element) {
     if (
@@ -60,6 +62,21 @@ window.onscroll = function () {
     }
   });
 };
+// Getting Anchors In Our DOM And Add Event Listener On Them
+const links = document.querySelectorAll(".menu__link");
+links.forEach(function (ele) {
+  ele.addEventListener("click", smoothScroll);
+});
+// This Is The Main Function To Make The Scrolling Smooth When Clicking On One Of The Anchors
+function smoothScroll(e) {
+  e.preventDefault();
+  const anch = this.getAttribute("href");
+  const offsetTop = document.querySelector(anch).offsetTop;
+  scroll({
+    top: offsetTop,
+    behavior: "smooth",
+  });
+}
 // build the nav
 // Add class 'active' to section when near top of viewport
 // Scroll to anchor ID using scrollTO event
