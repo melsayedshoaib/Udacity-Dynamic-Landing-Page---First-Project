@@ -96,6 +96,10 @@ section {
 .navbar__menu .menu__link:hover {
     background: #333;
     color: #fff;
+    -webkit-transition: ease 0.3s all;
+    -moz-transition: ease 0.3s all;
+    -ms-transition: ease 0.3s all;
+    -o-transition: ease 0.3s all;
     transition: ease 0.3s all;
 }
 
