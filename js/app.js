@@ -86,7 +86,7 @@ const scrollTop = function () {
 };
 // Calling The Function
 scrollTop();
-// Collapsing Sections - The Section Has To Be On The Active State To Be Able To Toggle Via Its Heading (H2)
+// Collapsing Sections - Clicking On The Headers (H2) To Collapse And/Or Show The Collapsed Sections
 let secHeaders = document.getElementsByTagName("h2");
 let i;
 for (i = 0; i < secHeaders.length; i++) {
