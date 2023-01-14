@@ -48,7 +48,18 @@ creatingListItems();
  * Begin Main Functions
  *
  */
-
+window.onscroll = function () {
+  document.querySelectorAll("section").forEach(function (element) {
+    if (
+      element.getBoundingClientRect().top >= -400 &&
+      element.getBoundingClientRect().top <= 150
+    ) {
+      element.classList.add("your-active-class");
+    } else {
+      element.classList.remove("your-active-class");
+    }
+  });
+};
 // build the nav
 // Add class 'active' to section when near top of viewport
 // Scroll to anchor ID using scrollTO event
