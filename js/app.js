@@ -60,7 +60,8 @@ const scrollTop = function () {
   const scrollBtn = document.createElement("button");
   scrollBtn.innerHTML = "Back To Top";
   scrollBtn.setAttribute("class", "scrolltotop");
-  document.body.appendChild(scrollBtn);
+  let main = document.getElementsByTagName("main");
+  main[0].appendChild(scrollBtn);
   const scrollBtnDisplay = function () {
     window.scrollY > window.innerHeight
       ? scrollBtn.classList.add("scrolltotopshow")
