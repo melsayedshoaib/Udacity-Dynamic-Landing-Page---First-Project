@@ -48,7 +48,13 @@ p {
 }
 
 /* Active Class For Collapsing Sections */
-.active {}
+.active {
+    -webkit-transition: 0.5;
+    -moz-transition: 0.5;
+    -ms-transition: 0.5;
+    -o-transition: 0.5;
+    transition: 0.5;
+}
 
 /* ---- Layout Rules ---- */
 main {
