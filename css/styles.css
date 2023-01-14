@@ -143,6 +143,11 @@ section {
     -ms-transition: 0.5s;
     -o-transition: 0.5s;
     transition: 0.5s;
+    opacity: 0;
+}
+
+.scrolltotopshow {
+    opacity: 1;
 }
 
 @media only screen and (min-width: 35em) {
