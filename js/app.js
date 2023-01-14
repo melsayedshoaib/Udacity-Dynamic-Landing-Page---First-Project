@@ -20,6 +20,7 @@
  * Define Global Variables
  *
  */
+// Getting The Starting Time Of The Performance
 let startingTime = performance.now();
 // Getting All Section Elements Dynamically
 const sectionGroup = Array.from(document.querySelectorAll("section"));
@@ -44,7 +45,11 @@ function creatingListItems() {
     itemsGroup.appendChild(itemLinks);
   }
 }
+// Calling The Function
 creatingListItems();
+/* 
+  The Following Lines Of Code Depicts The Visibilty Of The Navbar While Scrolling And/Or The Invisibility When Stop Scrolling 
+*/
 let topPosition;
 navbar = document.getElementsByClassName("page__header");
 window.addEventListener("scroll", function () {
@@ -56,6 +61,7 @@ window.addEventListener("scroll", function () {
   }
   topPosition = topScroll;
 });
+// A Function To Scroll To Top When Clicking On The Button
 const scrollTop = function () {
   const scrollBtn = document.createElement("button");
   scrollBtn.innerHTML = "Back To Top";
@@ -78,6 +84,7 @@ const scrollTop = function () {
   };
   scrollBtn.addEventListener("click", scrollWindow);
 };
+// Calling The Function
 scrollTop();
 /**
  * End Helper Functions
@@ -112,6 +119,7 @@ function smoothScroll(e) {
     behavior: "smooth",
   });
 }
+// Getting The Ending Time Of The Performance
 let endingTime = performance.now();
 // Testing The Performanc In The Console Window Which Depicts The Time Code Has Taken To Run In Milliseconds
 console.log(`${endingTime - startingTime} milliseconds`);
