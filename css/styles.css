@@ -38,12 +38,17 @@ h2 {
     font-family: 'Oxygen', Sans-Serif;
     font-size: 3em;
     color: #fff;
+    /* Cursor Pointer For Treating H2 As A Collapsor For The Content Of Our Sections */
+    cursor: pointer;
 }
 
 p {
     line-height: 1.6em;
     color: #eee;
 }
+
+/* Active Class For Collapsing Sections */
+.active {}
 
 /* ---- Layout Rules ---- */
 main {

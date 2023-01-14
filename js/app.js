@@ -86,6 +86,21 @@ const scrollTop = function () {
 };
 // Calling The Function
 scrollTop();
+// Collapsing Sections - The Section Has To Be On The Active State To Be Able To Toggle Via Its Heading (H2)
+let secHeaders = document.getElementsByTagName("h2");
+let i;
+for (i = 0; i < secHeaders.length; i++) {
+  let secHeader = secHeaders[i];
+  secHeader.addEventListener("click", function () {
+    this.classList.toggle("active");
+    let collapse = this.nextElementSibling;
+    if (collapse.style.display === "block") {
+      collapse.style.display = "none";
+    } else {
+      collapse.style.display = "block";
+    }
+  });
+}
 /**
  * End Helper Functions
  * Begin Main Functions
