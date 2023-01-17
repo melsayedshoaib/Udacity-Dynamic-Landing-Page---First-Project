@@ -4,12 +4,6 @@ This is a dynamic landing page project, as the main focus on building it dynamic
 
 [Live Preview](https://melsayedshoaib.github.io/cd0428-landing-page/ "Dynamic Landing Page")
 
-## Table of contents
-
-- Dynamic Landing Page
-- [Live Preview](https://melsayedshoaib.github.io/cd0428-landing-page/ "Dynamic Landing Page")
-- Usage
-
 ## Usage
 
 - Using and array to store sections and loop through them using for/of loop to create navbar links and link each link with the corresponding section.
