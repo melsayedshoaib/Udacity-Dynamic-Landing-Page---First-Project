@@ -13,6 +13,7 @@ This is a dynamic landing page project, as the main focus on building it dynamic
 - Using getBoundingClientRect function to be able to activating the viewport section as the section in the viewport will be highlighted with the aid of your-active-class, the change will occur in the sections background.
 - Every scrolling movement is smoothly implemented.
 - Testing the performance time and print it to the console window.
+- With the value -150px, the feature of hiding the navbar while not scrolling is now on the par for all devices even for the devices with 240 X 320 dimensions.
 
 ## Dependencies
 
