@@ -27,3 +27,5 @@ Mainly I've depended on the Udacity content as the content is per se, but here i
 - [getBoundingClientRect](https://developer.mozilla.org/en-US/docs/Web/API/Element/getBoundingClientRect "getBoundingClientRect")
 - [pageYOffset](https://developer.mozilla.org/en-US/docs/Web/API/Window/pageYOffset "pageYOffset")
 - [scrollTo](https://developer.mozilla.org/en-US/docs/Web/API/Element/scrollTo "scrollTo")
+- [scroll to top behavior](https://codepen.io/w3collective/pen/eYZvPRv "scroll to top behavior - inspired by W3Collective on Codepen but I have made changes in my own code")
+- [hide the navbar while not scrolling](https://www.w3schools.com/howto/howto_js_navbar_hide_scroll.asp "hide the navbar while not scrolling")
