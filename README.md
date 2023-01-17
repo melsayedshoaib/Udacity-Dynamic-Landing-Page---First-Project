@@ -2,7 +2,7 @@
 
 This is a dynamic landing page project, as the main focus on building it dynamically using JavaScript.
 
-[Live Preview](https://github.com/melsayedshoaib/Udacity-Dynamic-Landing-Page---First-Project "Dynamic Landing Page")
+[Live Preview](https://melsayedshoaib.github.io/Udacity-Dynamic-Landing-Page---First-Project/ "Dynamic Landing Page")
 
 ## Usage
 
