@@ -16,7 +16,7 @@ This is a dynamic landing page project, as the main focus on building it dynamic
 
 ## Dependencies
 
-Mainly I've depended on the Udacity content as the content is per se, but here is a list of the external resources that I've used.
+Mainly I've depended on the Udacity content per se, but here is a list of the external resources that I've used.
 
 - [getBoundingClientRect](https://developer.mozilla.org/en-US/docs/Web/API/Element/getBoundingClientRect "getBoundingClientRect")
 - [pageYOffset](https://developer.mozilla.org/en-US/docs/Web/API/Window/pageYOffset "pageYOffset")
