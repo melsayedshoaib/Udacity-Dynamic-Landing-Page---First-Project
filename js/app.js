@@ -45,8 +45,9 @@ function creatingListItems() {
     itemsGroup.appendChild(itemLinks);
   }
 }
-// Calling The Function
+// Calling The Function To Create List Of Sections
 creatingListItems();
+
 /* 
   The Following Lines Of Code Depicts The Visibilty Of The Navbar While Scrolling And/Or The Invisibility When Stop Scrolling 
 */
