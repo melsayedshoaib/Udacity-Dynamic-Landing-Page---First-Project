@@ -56,7 +56,7 @@ navbar = document.getElementsByClassName("page__header");
 window.addEventListener("scroll", function () {
   let topScroll = window.pageYOffset || document.documentElement.topScroll;
   if (topScroll > topPosition) {
-    navbar[0].style.top = "-82px";
+    navbar[0].style.top = "-150px";
   } else {
     navbar[0].style.top = "0";
   }
