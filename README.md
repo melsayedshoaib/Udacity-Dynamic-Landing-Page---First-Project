@@ -8,7 +8,6 @@ This is a dynamic landing page project, as the main focus on building it dynamic
 
 - Dynamic Landing Page
 - [Live Preview](https://melsayedshoaib.github.io/cd0428-landing-page/ "Dynamic Landing Page")
-- Table of contents
 - Usage
 
 ## Usage
@@ -21,7 +20,7 @@ This is a dynamic landing page project, as the main focus on building it dynamic
 - Every scrolling movement is smoothly implemented.
 - Testing the performance time and print it to the console window.
 
-## dependencies
+## Dependencies
 
 Mainly I've depended on the Udacity content as the content is per se, but here is a list of the external resources that I've used.
 
