@@ -165,6 +165,13 @@ section {
     opacity: 1;
 }
 
+/* Activating The Current Nav Link When Clicked */
+
+.activeLinks {
+    background-color: #333;
+    color: white !important;
+}
+
 @media only screen and (min-width: 35em) {
     .landing__container {
         max-width: 50em;

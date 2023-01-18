@@ -43,6 +43,12 @@ function creatingListItems() {
     itemSources.textContent = `${sectionName}`;
     itemLinks.appendChild(itemSources);
     itemsGroup.appendChild(itemLinks);
+    itemSources.addEventListener("click", function () {
+      itemSources.classList.add("activeLinks");
+    });
+    itemSources.onblur = function () {
+      itemSources.classList.remove("activeLinks");
+    };
   }
 }
 // Calling The Function To Create List Of Sections
